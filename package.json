@@ -4,8 +4,12 @@
   "description": "Site for Mudrat to show history and sell merch",
   "main": "index.js",
   "scripts": {
+    "start": "browser-sync start --server --files '*.html, *.css, *.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Nick Ray",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.26.7"
+  }
 }
