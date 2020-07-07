@@ -4,6 +4,7 @@
   --tertiary-color: #FBFF00;
   --dark-primary: #095E07;
   --light-primary: #59B748;
+  --dark-secondary: #9e1b1b;
 }
 
 body {
@@ -81,17 +82,48 @@ h2 {
 
 .cta-button {
   color: white;
-  border: 2px solid var(--primary-color);
+  border: 2px solid var(--secondary-color);
   border-radius: 5px;
-  background: var(--primary-color);
+  background: var(--secondary-color);
   font-size: 1.953em;
-  text-shadow: 1px 1px var(--secondary-color);
+  text-shadow: 1px 1px var(--primary-color);
   text-transform: uppercase;
   padding: 0.75em 0.5em;
   transition: background 1s, border-color 0.5s;
 }
 
 .cta-button:hover {
-  background: var(--dark-primary);
-  border-color: var(--secondary-color);
+  background: var(--dark-secondary);
+  border-color: var(--tertiary-color);
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 5.96em;
+  background-color: var(--primary-color);
+}
+
+.socials { 
+  display: flex;
+  align-items: center;
+}
+
+.socials-link {
+  margin-right: 0.5em;
+  font-size: 1.25em;
+  text-decoration: none;
+  color: black;
+  transition: color 0.5s;
+}
+
+.socials-link:hover {
+  color: #ddd;
+}
+
+.socials-link-img {
+  height: 35px;
+  width: 35px;
+  margin-right: 3.052em;
 }
